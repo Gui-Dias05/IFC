@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "lato";
+    src: url(../font/lato/lato.ttf);
+}
+
+body{
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    font-family: "lato";
+}
+
+input{
+    padding-bottom: 3px;
+}
+
+input::-webkit-input-placeholder{
+    color: white;
+    opacity: 50%;
+    font-size: 0.8em;
+}
+
+.form{
+    font-weight: bold;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.content-site{
+    background-color: white;
+    padding: 3% 3% 8% 3%;
+    border-radius: 15px;
+    margin: 4% 30%;
+    color: #590202;
+}
+
+.lin{
+    background-color: #590202; 
+    padding: 0.06px; 
+    width: 10%;
+    margin-left: 45%;
+}
+
+a{
+    color: #590202;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    font-family: 'lato';
+    font-size: 1em;
+    font-weight: bold;
+    margin: 5% 0%;
+}
+
+a{
+    background-image: linear-gradient(to right, #bc9371, #bc9371 50%, #590202 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+  
+a:before{
+    content: '';
+    background: #bc9371;
+    display: block;
+    position: absolute;
+    bottom: -3%;
+    left: 0;
+    width: 0;
+    height: 6%;
+    transition: all 0.3s ease-in-out;
+}
+  
+a:hover {
+   background-position: 0;
+}
+  
+a:hover::before{
+    width: 100%;
+}

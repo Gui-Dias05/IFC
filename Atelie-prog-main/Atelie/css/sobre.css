@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+@font-face {
+    font-family: "lato";
+    src: url(../font/lato/lato.ttf);
+}
+
+@font-face {
+    font-family: "tang";
+    src: url(../font/tangerine/Tangerine_Regular.ttf);
+}
+
+header{
+    background-color: #590202;
+    color: white;
+    opacity: 90%;
+    padding: 1% 0% 0.1%;
+    font-size: 2.8em;
+}
+
+header > p{
+    margin-left: 8%;
+}
+
+h3{
+    color: #590202;
+    text-decoration: none;
+    display: block;
+    padding: 20px 5px;
+    cursor: pointer;
+}
+
+h3{
+    background-image: linear-gradient(to right, red, red 50%, #590202 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+  
+h3:before{
+    content: '';
+    background: #590202;
+    display: block;
+    position: absolute;
+    bottom: -3%;
+    left: 0;
+    width: 0;
+    height: 6%;
+    transition: all 0.3s ease-in-out;
+}
+  
+h3:hover {
+   background-position: 0;
+}
+  
+h3:hover::before{
+    margin-left: 1%;
+    width: 100%;
+}
+
+.content-site{
+    background-color: white;
+    border-radius: 20px;
+    padding: 3% 3% 5% 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30%;
+    margin-bottom: 25%;
+    color: #590202;
+}
+
+.content-site > h1{
+    font-family: "lato";
+}
+
+.lin{
+    background-color: #590202; 
+    padding: 0.06px; 
+    width: 6%;
+    margin-left: 47%;
+}
+
+.footer-site{
+    background-color: #590202;
+    opacity: 90%;
+    color: white;
+    padding: 2em;
+}

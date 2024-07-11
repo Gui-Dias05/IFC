@@ -1,0 +1,156 @@
+.fundo > img{
+    width: 5%;
+}
+
+span{
+    margin: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    /* background-color: #54b3d6; */
+    background-image: url(../img/acad2.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-size: 150%; */
+}
+
+.content-site{
+    background-color: #54b3d6;
+    /*opacity: 90%;*/
+    padding-bottom: 8%;
+    padding-top: 2%;
+    margin-top: 29%;
+    margin-bottom: 29%;
+}
+
+footer{
+    background-color: black;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color: white;
+}
+
+.acao {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 30px;    
+    color: black; 
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: #D9D9D9;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: 15%;
+    margin-left: 20%;
+} 
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #D9D9D9; 
+}
+
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: #D9D9D9; 
+    color: black;
+}
+
+.right{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 30px;    
+    color: black; 
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 1%;
+    background-color: #D9D9D9;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: 15%;
+    margin-right: 20%;
+}
+
+.button:link,
+.button:visited {
+text-transform: uppercase;
+text-decoration: none;
+padding: 15px 40px;
+display: inline-block;
+border-radius: 100px;
+transition: all .2s;
+position: relative;
+}
+
+.button:hover {
+transform: translateY(-3px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+transform: translateY(-1px);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-white {
+background-color: #E3E3E3;
+color: black;
+}
+
+.button::after {
+content: "";
+display: inline-block;
+height: 100%;
+width: 100%;
+border-radius: 100px;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+transition: all .4s;
+}
+
+.button-white::after {
+background-color: #D9D9D9;
+}
+
+.button:hover::after {
+transform: scaleX(1.4) scaleY(1.6);
+opacity: 0;
+}
+
+.button-animated {
+animation: moveInBottom 5s ease-out;
+animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+0% {
+    opacity: 0;
+    transform: translateY(30px);
+}
+    
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}

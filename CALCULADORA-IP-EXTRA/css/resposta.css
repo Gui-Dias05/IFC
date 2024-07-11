@@ -1,0 +1,26 @@
+body { 
+    width:auto; 
+    float:left; 
+    padding:0.4em 1.3em; 
+    font-family:'open_sansregular'; 
+    font-size:1em; 
+    background-color:#2e4757; 
+    color:#fff; 
+    border:0; 
+    border-radius:4px;
+    transition:0.4s; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 150%;
+}
+button{ 
+    width:auto; 
+    float:left; 
+    padding:0.4em 1.3em; 
+    font-family:'open_sansregular'; 
+    font-size:1em; 
+    background-color:#0085d5; 
+    color:#fff; 
+    border:0; 
+    border-radius:4px;
+    transition:0.4s; 
+}
